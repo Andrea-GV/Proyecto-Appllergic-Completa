@@ -1,8 +1,17 @@
-import "./App.css";
+
+import './App.css'
+import LoginPage from './pages/login/loginPage/LoginPage'
 
 function App() {
-  console.log();
-  return <></>;
+
+  return (
+
+    <>
+      <LoginPage></LoginPage>
+    </>
+
+  )
+
 }
 
 export default App;

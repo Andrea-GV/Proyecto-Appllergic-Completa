@@ -54,7 +54,9 @@ export default function RegisterContact() {
           {...register("telefono", {required: true, pattern: /^(\+\d{1,3})?\s?(\d{3,}){1}(\s?\d{2,}){1,2}$/})}
         />
 
-        <input type="submit" id="guardar" value="Guardar contacto" disabled={!isDirty && !isValid} />
+        <input type="submit" id="guardar" value="Guardar contacto"
+            className={!isDirty || !isValid ? "disabled" : ""}
+            disabled={!isDirty || !isValid} />
 
         <Link to={"/home"}>
           <p id="skip">Registraré mi contacto en otro momento</p>

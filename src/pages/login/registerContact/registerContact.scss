@@ -64,10 +64,13 @@
             font-weight: 600;
             width: 100%;
             height: 40px;
-            background-color: #C4C4C4;
+            background-color: #2BBEE2;
             color: white;
             border:none;
             border-radius: 10px;
+        }
+        #guardar:disabled{
+            background-color: #C4C4C4;
         }
         a{
            text-decoration: none;

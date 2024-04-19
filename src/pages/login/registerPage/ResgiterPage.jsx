@@ -22,9 +22,6 @@ export default function ResgiterPage() {
         // await axios.post("https://node-basic-wheat.vercel.app/user/register", dataForm);
         //  console.log("good", data);;
 
-
-
-
     }
     //recogemos el objeto transformado en string y lo volvemos a pasar a objeto
     console.log(JSON.parse(localStorage.getItem('form')));

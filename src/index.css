@@ -4,7 +4,7 @@ body {
   margin: 0 auto !important;
   margin-top: 2.5vh !important;
   max-width: 375px;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 

@@ -17,6 +17,7 @@ import Valoracion from "./components/valoracion/Valoracion.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
 
   <React.StrictMode>
+
     <App />
   </React.StrictMode>
 

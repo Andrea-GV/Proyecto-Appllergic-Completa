@@ -14,7 +14,7 @@ import Profile from './pages/user/profile/Profile';
 
 
 
-import OnBoarding from './pages/onBoarding/OnBoarding'
+//import OnBoarding from './pages/onBoarding/OnBoarding'
 
 
 
@@ -33,7 +33,7 @@ function App() {
   return (
 
     <>
-      <OnBoarding></OnBoarding>
+      {/* <OnBoarding></OnBoarding> */}
 
       <BrowserRouter>
 
@@ -48,7 +48,7 @@ function App() {
             element={<LoginPage></LoginPage>} />
 
           <Route
-            path='register'
+            path='/register'
             element={<ResgiterPage></ResgiterPage>} />
 
           <Route
@@ -56,7 +56,7 @@ function App() {
             element={<RegisterContact></RegisterContact>} />
 
           <Route
-            path='register/final'
+            path='/register/final'
             element={<RegisterFinalPage></RegisterFinalPage>} />
 
           <Route
@@ -75,17 +75,12 @@ function App() {
             path='/splash'
             element={<Splash></Splash>} />
 
-
-
           {/* <Route path='/allergy' element={ } /> */}
-
 
 
         </Routes>
 
       </BrowserRouter>
-
-
 
     </>
 

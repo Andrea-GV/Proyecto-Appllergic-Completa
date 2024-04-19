@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import "./bttnBack.scss";
 
 export default function Bttn_Back() {
 
-    return (
+  const navigate = useNavigate()
+
+  return (
 
     <div className="back-button">
-        <button> ← Volver </button>
+
+      <button onClick={() => navigate(-1)}> ← Volver </button>
     </div>
 
   )

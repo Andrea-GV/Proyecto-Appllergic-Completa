@@ -1,32 +1,36 @@
-import React from 'react'
+//import React from 'react'
 import Bttn_Back from '../../../components/bttns/bttn_Back/Bttn_Back'
 import { useForm } from 'react-hook-form'
 
-import axios from 'axios';
+//import axios from 'axios';
 
-import { API } from '../../../context/postContext';
-import { Link } from 'react-router-dom';
+//import { API } from '../../../context/postContext';
+import { Link, useNavigate } from 'react-router-dom';
+
+
 
 export default function ResgiterPage() {
 
+    const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
 
     const submit = (dataForm) => {
         console.log(dataForm);
-
+        navigate("/register/registerContact")
 
         // recogemos los datso del objeto del form y lo guardaps en formato string en loscalstorage
 
         localStorage.setItem("form", JSON.stringify(dataForm))
 
-        // await axios.post("https://node-basic-wheat.vercel.app/user/register", dataForm);
-        //  console.log("good", data);;
+        // await axios.post("https://node-basic-wheat.vercel.app/user/register", .);
+        // console.log("good", data);
 
-
+       
 
 
     }
     //recogemos el objeto transformado en string y lo volvemos a pasar a objeto
+
     console.log(JSON.parse(localStorage.getItem('form')));
 
 
@@ -85,11 +89,11 @@ export default function ResgiterPage() {
 
                 </fieldset>
 
-
-            </form>
-            <div className='d-flex align-items-center flex-column'>
+            <button>Crear</button>
+            {/* <div className='d-flex align-items-center flex-column'>
                 <Link to={"/register/registerContact"}>Crear</Link>
-            </div>
+            </div> */}
+            </form>
 
         </div>
     )

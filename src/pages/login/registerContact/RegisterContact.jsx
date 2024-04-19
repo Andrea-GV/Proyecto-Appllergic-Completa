@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Bttn_Back from "../../../components/bttns/bttn_Back/Bttn_Back";
 import "./registerContact.scss";
 import axios from "axios";
 
-import { useForm } from 'react-hook-form'
-
 export default function RegisterContact() {
-
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
@@ -16,8 +14,12 @@ export default function RegisterContact() {
 
   const submit = async ( formData ) => {
     console.log(formData);
-    await axios.post("https://node-basic-wheat.vercel.app/sosContact");
-  };
+    navigate("/register/registerContact")
+    // localStorage.setItem("regForm", JSON.stringify(formData))
+      await axios.post("https://node-basic-wheat.vercel.app/user/register", JSON.parse(localStorage.getItem('regForm')));
+      await axios.post("https://node-basic-wheat.vercel.app/user/register/sosContact". formData)
+    };
+    
 
   return (
     <div className="reg-contact">

@@ -21,6 +21,16 @@
     "react-hook-form": "^7.51.3",
     "react-router-dom": "^6.22.3",
     "scss": "^0.2.4"
+
+
+
+    "swiper": "^11.1.1"
+
+
+
+   
+    "react-qr-scanner": "^1.0.0-alpha.11"
+
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

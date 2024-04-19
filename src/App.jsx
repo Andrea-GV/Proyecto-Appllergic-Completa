@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import RegisterContact from './pages/login/registerContact/RegisterContact';
 
+
 import './App.css';
 import LoginPage from './pages/login/loginPage/LoginPage';
 import Home from './pages/home/Home';
@@ -11,7 +12,15 @@ import RegisterFinalPage from './pages/login/registerFinalPage/RegisterFinalPage
 import ResgiterPage from './pages/login/registerPage/ResgiterPage';
 import Profile from './pages/user/profile/Profile';
 
+
+
+import OnBoarding from './pages/onBoarding/OnBoarding'
+
+
+
+
 //const navigate = useNavigate()
+
 
 function App() {
 
@@ -24,6 +33,7 @@ function App() {
   return (
 
     <>
+      <OnBoarding></OnBoarding>
 
       <BrowserRouter>
 

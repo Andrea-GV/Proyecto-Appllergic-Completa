@@ -15,14 +15,9 @@ import Scanner from "./pages/scanner/Scanner.jsx";
 import Valoracion from "./components/valoracion/Valoracion.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+
   <React.StrictMode>
-
-
-    {/* <Home></Home>
-    <Scanner /> */}
-    {/* <App /> */}
-    <Valoracion></Valoracion>
-
+    <App />
   </React.StrictMode>
-  
+
 );

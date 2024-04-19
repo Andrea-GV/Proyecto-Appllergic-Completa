@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react";
-// import QrScanner from "react-qr-scanner";
+// import { QRScanner } from "./QRScanner/QRScanner";
+import { Scanner as QrScanner } from "@yudiel/react-qr-scanner";
 import "./Scanner.css";
+import { BarcodeScanner } from "./BarcodeScanner";
+// import { QRScanner } from "./QRScanner/QRScanner";
+import Menu from "../../components/menu/Menu";
 
 export default function Scanner() {
   //   const previewStyle = {
@@ -34,12 +38,12 @@ export default function Scanner() {
           </p>
         </div>
         <div className="scaner">
-          {/* <QrScanner
-            ref={scannerRef}
-            delay={300}
-            style={previewStyle}
-            onDecode={(result) => console.log(result)}
-          /> */}
+          <BarcodeScanner />
+          {/* <QRScanner /> */}
+          <QrScanner
+            onResult={(result) => console.log(result)}
+            onError={(error) => console.log(error?.message)}
+          />{" "}
         </div>
         <div className="scanner-types">
           <div className="scaner1">
@@ -56,6 +60,7 @@ export default function Scanner() {
           </div>
         </div>
       </div>
+      <Menu />
     </div>
   );
 }

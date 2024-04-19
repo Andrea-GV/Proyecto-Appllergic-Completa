@@ -1,28 +1,27 @@
-import React from "react";
+// import React from "react"; // ES6
+// import QrReader from "react-qr-scanner";
+// // import { Scanner } from "@yudiel/react-qr-scanner";
 
-function MyComponent() {
-  const previewStyle = {
-    height: 240,
-    width: 320,
-  };
+// const previewStyle = {
+//   height: 500,
+//   width: 625,
+// };
 
-  const handleScan = (data) => {
-    console.log("Scan result:", data);
-  };
+// export function QRScanner() {
+//   const successScan = (data) => {
+//     if (data) {
+//       console.log(data);
+//     }
+//   };
 
-  const handleError = (err) => {
-    console.error(err);
-  };
+//   const errorScan = (err) => {
+//     console.log(err);
+//   };
 
-  return (
-    <div>
-      <QRScanner
-        onDecode={handleScan}
-        onError={handleError}
-        style={previewStyle}
-      />
-    </div>
-  );
-}
-
-export default MyComponent;
+//   return (
+//     <Scanner
+//       onResult={(result) => console.log(result)}
+//       onError={(error) => console.log(error?.message)}
+//     />
+//   );
+// }

@@ -4,7 +4,10 @@ import Bttn_Back from "../../../components/bttns/bttn_Back/Bttn_Back";
 import "./registerContact.scss";
 import axios from "axios";
 
+import { useForm } from 'react-hook-form'
+
 export default function RegisterContact() {
+
     const {
         register,
         handleSubmit,

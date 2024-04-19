@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import RegisterContact from './pages/login/registerContact/RegisterContact';
 
@@ -18,6 +19,9 @@ import Profile from './pages/user/profile/Profile';
 
 
 
+import LoginPage from "./pages/login/loginPage/LoginPage";
+import ReactStars from 'react-stars'
+
 
 //const navigate = useNavigate()
 
@@ -25,19 +29,20 @@ import Profile from './pages/user/profile/Profile';
 function App() {
 
 
+
   useEffect(() => {
 
     //navigate("/OnBoarding")
   }, [])
 
-  return (
 
+  return (
     <>
       {/* <OnBoarding></OnBoarding> */}
 
       <BrowserRouter>
-
         <Routes>
+
 
           <Route
             path="/"
@@ -78,14 +83,15 @@ function App() {
           {/* <Route path='/allergy' element={ } /> */}
 
 
-        </Routes>
 
+        </Routes>
       </BrowserRouter>
 
+
+     
+      
     </>
-
-  )
-
+  );
 }
 
 export default App;

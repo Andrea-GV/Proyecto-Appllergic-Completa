@@ -39,14 +39,14 @@
   text-align: center;
   margin: 10px;
 }
-span {
+.scanner-types .material-symbols-outlined {
   color: black;
   padding: 10px;
   border-radius: 50%;
 }
 
-span:hover {
+.scanner-types .material-symbols-outlined:hover {
   cursor: pointer;
-  background-color: red;
+  background-color: #26c7dc;
   color: white;
 }

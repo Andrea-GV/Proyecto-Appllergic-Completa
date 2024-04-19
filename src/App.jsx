@@ -12,7 +12,6 @@ import ResgiterPage from "./pages/login/registerPage/ResgiterPage";
 import Profile from "./pages/user/profile/Profile";
 import AllergyPage from "./pages/login/allergyPage/AllergyPage";
 import Valoracion from "./components/valoracion/Valoracion";
-import SlidesOnBoard from "./components/slides/SlidesOnBoard/SlidesOnBoard"
 import OnBoarding from './pages/onBoarding/OnBoarding'
 
 //const navigate = useNavigate()
@@ -24,7 +23,7 @@ function App() {
 
   return (
     <>
-      { <OnBoarding></OnBoarding> }
+      
 
       <BrowserRouter>
         <Routes>
@@ -61,7 +60,7 @@ function App() {
           <Route path="/valoracion" element={<Valoracion></Valoracion>} />
 
 
-          <Route path="/slides" element={<SlidesOnBoard></SlidesOnBoard>}/>
+          <Route path="/slides" element={<OnBoarding></OnBoarding>}/>
 
 
 

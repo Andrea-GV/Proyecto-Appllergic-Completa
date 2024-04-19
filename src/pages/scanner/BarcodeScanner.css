@@ -1,0 +1,9 @@
+.c-barcode-scanner .drawingBuffer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+}
+.c-barcode-scanner video {
+  width: 100%;
+}

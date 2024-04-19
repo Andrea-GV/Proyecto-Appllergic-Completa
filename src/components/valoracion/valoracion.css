@@ -1,0 +1,51 @@
+.logoGiro{
+    margin-bottom: 40px;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+}
+
+.valoracion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.logoGiro img {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.text {
+    text-align: center;
+    margin-top: -100px;
+    font-size: 21px;
+}
+
+.estrellitas {
+        margin-bottom: 40px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -150px;
+}
+
+.estrella :hover{
+   background-color: inherit;
+   
+}
+.estrella{
+  
+}

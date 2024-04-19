@@ -1,0 +1,89 @@
+.allergies-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.text-h1 h1 {
+    font-size: 21px;
+    font-family: Montserrat;
+}
+
+.text-p {
+    font-family: Montserrat;
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 15px;
+    color: #595f65;
+    text-align: center;
+    width: 80%;
+}
+
+.allergies-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.allergy {
+    width: 130px;
+     /* background-color: #C4C4C4; */
+    background-color: #28B56D;
+    color: white;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   
+
+}
+
+.allergy:hover {
+    /* background-color: #C4C4C4; */
+    background-color: #128f4f;
+    cursor: pointer;
+
+}
+
+.allergy img {
+    width: 40%;
+    color: white;
+}
+
+.allergy p {
+    margin-bottom: 0;
+}
+
+.allergy.activated {
+    background-color: #FF5733;
+}
+
+.confirmation-button {
+    margin-top: 50px;
+    width: 100%;
+    height: 40px;
+    background-color: #2BBEE2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.confirmation-button h2 {
+    font-size: medium;
+    font-family: Montserrat;
+    text-align: center;
+    margin: 0;
+}

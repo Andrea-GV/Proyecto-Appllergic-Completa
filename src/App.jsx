@@ -1,4 +1,5 @@
 
+
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import RegisterContact from './pages/login/registerContact/RegisterContact';
 
@@ -36,6 +37,10 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          <Route path="/allergy" element={<AllergyPage></AllergyPage>}></Route>
+
+      
+
 
           <Route
             path="/"

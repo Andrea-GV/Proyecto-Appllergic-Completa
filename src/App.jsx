@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import RegisterContact from './pages/login/registerContact/RegisterContact';
 
@@ -18,6 +19,9 @@ import OnBoarding from './pages/onBoarding/OnBoarding'
 
 
 
+import LoginPage from "./pages/login/loginPage/LoginPage";
+import ReactStars from 'react-stars'
+
 
 //const navigate = useNavigate()
 
@@ -25,19 +29,20 @@ import OnBoarding from './pages/onBoarding/OnBoarding'
 function App() {
 
 
+
   useEffect(() => {
 
     //navigate("/OnBoarding")
   }, [])
 
-  return (
 
+  return (
     <>
       <OnBoarding></OnBoarding>
 
       <BrowserRouter>
-
         <Routes>
+
 
           <Route
             path="/"
@@ -81,16 +86,21 @@ function App() {
 
 
 
-        </Routes>
 
+        </Routes>
       </BrowserRouter>
 
 
+      <LoginPage></LoginPage>
+      <ReactStars></ReactStars>
 
+
+
+      
+
+      
     </>
-
-  )
-
+  );
 }
 
 export default App;

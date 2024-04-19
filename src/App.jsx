@@ -13,6 +13,7 @@ import Splash from './pages/splash/Splash';
 import RegisterFinalPage from './pages/login/registerFinalPage/RegisterFinalPage';
 import ResgiterPage from './pages/login/registerPage/ResgiterPage';
 import Profile from './pages/user/profile/Profile';
+import AllergyPage from './pages/login/allergyPage/AllergyPage'
 
 
 
@@ -38,9 +39,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/allergy" element={<AllergyPage></AllergyPage>}></Route>
-
-      
-
 
           <Route
             path="/"

@@ -1,0 +1,85 @@
+.reg-contact{
+    padding: 20px;
+    .top{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        h4{
+            text-align: end;
+            margin-left: 30%;
+            font-size: 12px;
+        }
+    }
+    .info{
+        margin: 20px;
+        text-align: center;
+        h2{ 
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: normal;
+        }
+        .grey{
+            width: 95%;
+            margin-top: 6%;
+            margin-left: 3%;
+            h3{
+                font-size: 15px;
+                letter-spacing: 0.5;
+                line-height: 24px;
+                color: rgb(89, 95, 101);
+            }
+        }
+    }
+    .formulario{
+        width: 88%;
+        margin: 10% 6%;
+        // margin-top: 4%;
+        // margin-left: 6%;
+        font-size: 11px;
+        #name{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 6%;
+            border: none;
+            border-bottom: 1px solid rgba(89, 95, 101, 0.452);
+        }
+        #email{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 6%;
+            border: none;
+            border-bottom: 1px solid rgba(89, 95, 101, 0.452);
+        }
+        #telefono {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 6%;
+            border: none;
+            border-bottom: 1px solid rgba(89, 95, 101, 0.452);
+        }
+        #guardar{
+            margin-top: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            height: 40px;
+            background-color: #2BBEE2;
+            color: white;
+            border:none;
+            border-radius: 10px;
+        }
+        #guardar:disabled{
+            background-color: #C4C4C4;
+        }
+        a{
+           text-decoration: none;
+        }
+        #skip{
+            width: 80%;
+            margin: 40px 30px;
+            
+            color: #2BBEE2;
+        }
+    }
+}

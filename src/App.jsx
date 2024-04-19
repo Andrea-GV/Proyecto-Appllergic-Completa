@@ -17,12 +17,6 @@ import Profile from './pages/user/profile/Profile';
 
 //import OnBoarding from './pages/onBoarding/OnBoarding'
 
-
-
-import LoginPage from "./pages/login/loginPage/LoginPage";
-import ReactStars from 'react-stars'
-
-
 //const navigate = useNavigate()
 
 
@@ -88,8 +82,8 @@ function App() {
       </BrowserRouter>
 
 
-     
-      
+
+
     </>
   );
 }

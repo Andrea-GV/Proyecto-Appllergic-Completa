@@ -17,5 +17,5 @@
   cursor: pointer;
 }
 .menu-icons li.active .material-symbols-outlined {
-  color: lightblue;
+  color: lightgrey;
 }

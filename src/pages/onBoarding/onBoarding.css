@@ -1,0 +1,27 @@
+/* .onBoardingContainer{
+    background-color: rgb(211, 214, 159);
+    width: 400px;
+    height: 500px;
+} */
+.onBoardingContainer .swiper {
+    width: 100%;
+    height: 550px;
+}
+
+.onBoardingContainer .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onBoardingContainer .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

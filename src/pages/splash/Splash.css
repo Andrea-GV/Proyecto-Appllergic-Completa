@@ -1,0 +1,31 @@
+.Portada {
+  padding-top: 100px;
+  cursor: pointer;
+}
+
+.Portada-arriba {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  color: lightgray;
+  font-size: 20px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.Portada-abajo {
+  padding-top: 100px;
+}
+
+.Portada-abajo img {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

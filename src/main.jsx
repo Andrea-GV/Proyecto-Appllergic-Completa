@@ -14,7 +14,7 @@ import Scanner from "./pages/scanner/Scanner.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <Splash /> */}
-    <Scanner />
+    {/* <Scanner /> */}
     <App />
   </React.StrictMode>
 );

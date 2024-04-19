@@ -14,14 +14,14 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<RegisterContact></RegisterContact>}>
+          <Route path="/user/emergencyContact" element={<RegisterContact></RegisterContact>}>
 
           </Route>
         </Routes>
 
       </BrowserRouter>
 
-      <LoginPage></LoginPage>
+      {/* <LoginPage></LoginPage> */}
 
     </>
 

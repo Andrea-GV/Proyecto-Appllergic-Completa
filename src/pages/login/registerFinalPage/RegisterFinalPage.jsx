@@ -1,7 +1,4 @@
-import React from 'react'
-
+import React from "react";
 export default function RegisterFinalPage() {
-    return (
-        <div>RegisterFinalPage</div>
-    )
+  return <div>RegisterFinalPage</div>;
 }

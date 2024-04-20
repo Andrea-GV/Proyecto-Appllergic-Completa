@@ -1,27 +1,34 @@
 import React from "react";
+
 import "./Menu.css";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
     <div className="menu">
       <div className="menu-icons">
         <ul>
-          {/* <li className={activeItem === 0 ? "active" : ""}></li> */}
-          <li>
-            <span className="material-symbols-outlined">home</span>
-          </li>
-          {/* <li className={activeItem === 1 ? "active" : ""}> */}
-          <li>
-            <span className="material-symbols-outlined">barcode_scanner</span>
-          </li>
-          {/* <li className={activeItem === 2 ? "active" : ""}> */}
-          <li>
-            <span className="material-symbols-outlined">book_4</span>
-          </li>
-          {/* <li className={activeItem === 3 ? "active" : ""}> */}
-          <li>
-            <span className="material-symbols-outlined">account_circle</span>
-          </li>
+          <Link to="/">
+            <li>
+              <span className="material-symbols-outlined">home</span>
+            </li>
+          </Link>
+          <Link to="/scanner">
+            <li>
+              <span className="material-symbols-outlined">barcode_scanner</span>
+            </li>
+          </Link>
+
+          <Link to="/diary">
+            <li>
+              <span className="material-symbols-outlined">book_4</span>
+            </li>
+          </Link>
+          <Link to="/profile">
+            <li>
+              <span className="material-symbols-outlined">account_circle</span>
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -4,17 +4,14 @@ import Bttn_Back from "../../../components/bttns/bttn_Back/Bttn_Back";
 import "./registerContact.scss";
 import axios from "axios";
 
-import { useForm } from 'react-hook-form'
-
 export default function RegisterContact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { isDirty, isValid },
+  } = useForm();
 
-    const {
-        register,
-        handleSubmit,
-        formState: {isDirty, isValid}
-    } = useForm();
-
-  const submit = async ( formData ) => {
+  const submit = async (formData) => {
     console.log(formData);
     await axios.post("https://node-basic-wheat.vercel.app/sosContact");
   };
@@ -47,19 +44,29 @@ export default function RegisterContact() {
           type="text"
           id="email"
           placeholder="Dirección e-mail"
-          {...register("email", { required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })}
+          {...register("email", {
+            required: true,
+            pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+          })}
         />
         <label htmlFor="telefono"></label>
         <input
           type="text"
           id="telefono"
           placeholder="Teléfono móvil"
-          {...register("telefono", {required: true, pattern: /^(\+\d{1,3})?\s?(\d{3,}){1}(\s?\d{2,}){1,2}$/})}
+          {...register("telefono", {
+            required: true,
+            pattern: /^(\+\d{1,3})?\s?(\d{3,}){1}(\s?\d{2,}){1,2}$/,
+          })}
         />
 
-        <input type="submit" id="guardar" value="Guardar contacto"
-            className={!isDirty || !isValid ? "disabled" : ""}
-            disabled={!isDirty || !isValid} />
+        <input
+          type="submit"
+          id="guardar"
+          value="Guardar contacto"
+          className={!isDirty || !isValid ? "disabled" : ""}
+          disabled={!isDirty || !isValid}
+        />
 
         <Link to={"/home"}>
           <p id="skip">Registraré mi contacto en otro momento</p>

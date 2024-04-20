@@ -1,0 +1,23 @@
+.diary-title h1 {
+  font-size: 21px;
+  padding-top: 70px;
+}
+.diary-text {
+  padding-top: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 15px;
+  color: #595f65;
+  text-align: center;
+  width: 80%;
+}
+.diary-button-save {
+  background-color: #27c6dc;
+  width: 325px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+}

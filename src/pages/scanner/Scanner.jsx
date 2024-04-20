@@ -1,12 +1,22 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 // import { QRScanner } from "./QRScanner/QRScanner";
 import { Scanner as QrScanner } from "@yudiel/react-qr-scanner";
 import "./Scanner.css";
 import { BarcodeScanner } from "./BarcodeScanner";
 // import { QRScanner } from "./QRScanner/QRScanner";
 import Menu from "../../components/menu/Menu";
+import { useNavigate } from "react-router-dom";
 
 export default function Scanner() {
+  const navigate = useNavigate();
+  const detailsProductPage = (data) => {
+    // console.log("dentro", data);
+    navigate("/scanner/result");
+    localStorage.setItem("idProduct", data);
+    window.location.reload();
+  };
+
+  useEffect(() => {}, []);
   //   const previewStyle = {
   //     height: 240,
   //     width: 320,
@@ -41,9 +51,9 @@ export default function Scanner() {
           <BarcodeScanner />
           {/* <QRScanner /> */}
           <QrScanner
-            onResult={(result) => console.log(result)}
+            onResult={(result) => detailsProductPage(result)}
             onError={(error) => console.log(error?.message)}
-          />{" "}
+          />
         </div>
         <div className="scanner-types">
           <div className="scaner1">
@@ -60,7 +70,7 @@ export default function Scanner() {
           </div>
         </div>
       </div>
-      <Menu />
+      {/* <Menu /> */}
     </div>
   );
 }

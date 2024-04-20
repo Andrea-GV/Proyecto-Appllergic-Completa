@@ -13,12 +13,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Splash from "./pages/splash/Splash.jsx";
 import Scanner from "./pages/scanner/Scanner.jsx";
 import Valoracion from "./components/valoracion/Valoracion.jsx";
+import Diary from "./pages/login/Diary/Diary.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-
-  <React.StrictMode>
-
-    <App />
-  </React.StrictMode>
-
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);

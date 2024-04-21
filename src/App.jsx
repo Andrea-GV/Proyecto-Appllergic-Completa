@@ -13,6 +13,7 @@ import Profile from "./pages/user/profile/Profile";
 import AllergyPage from "./pages/login/allergyPage/AllergyPage";
 import Valoracion from "./components/valoracion/Valoracion";
 import OnBoarding from './pages/onBoarding/OnBoarding'
+import ScannerResult from "./pages/scannerResult/ScannerResult";
 
 //const navigate = useNavigate()
 
@@ -52,9 +53,9 @@ function App() {
 
           <Route path="/scanner" element={<Scanner></Scanner>} />
 
-          {/* <Route 
+          <Route 
           path='/scanner/result' 
-          element={ } /> */}
+          element={<ScannerResult></ScannerResult> } />
 
           <Route path="/splash" element={<Splash></Splash>} />
 

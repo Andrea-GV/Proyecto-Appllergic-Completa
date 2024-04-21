@@ -1,15 +1,22 @@
 import React from 'react'
 import './home.css'
+import axios from 'axios';
 
 
 export default function Home() {
+
+    const getId = async () => {
+
+        const data = await axios();
+
+    }
   return (
       <div className='home-container'>
           <div className='home-profile'>
               <div className='photo-profile'>
                   <img src='public\IMG\lindsayLenardGhxX6TLxcqiUnsplashCopy2_2024-04-17\lindsayLenardGhxX6TLxcqiUnsplashCopy2.jpg' alt='profile'></img>
               </div>
-              <h2 className='name-profile'> Hello! Ana</h2>
+              <h2 className='name-profile'> Hello Ana!</h2>
           </div>
           
           <div className='home-buttons'>

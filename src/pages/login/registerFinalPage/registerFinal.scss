@@ -1,0 +1,51 @@
+.reg-final{
+    padding: 20px;
+    .topF{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        h4{
+            text-align: end;
+            margin-left: 30%;
+            font-size: 12px;
+        }
+    }
+    .ok{
+        margin-top: 30%;
+        margin-left: 5%;
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            max-height: 200px;
+            object-fit: contain !important;
+        }
+    }
+    .finished{
+        margin: 15% 5%;
+        text-align: center;
+
+        h2{ 
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: normal;
+        }
+    }
+    .button{
+        #scan{
+            margin-top: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            height: 40px;
+            background-color: #2BBEE2;
+            color: white;
+            border:none;
+            border-radius: 10px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,52 @@
+.scaner-info {
+  padding-top: 80px;
+}
+.scaner-info-title h1 {
+  font-size: 21px;
+}
+.scaner-info-text {
+  padding-top: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 15px;
+  color: #595f65;
+  text-align: center;
+  width: 80%;
+}
+.scanner-types {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+.scanner-types h5 {
+  font-size: 12px;
+  padding-top: 10px;
+}
+.scaner1 {
+  width: 20%;
+  text-align: center;
+  margin: 10px;
+}
+.scanerqr {
+  width: 20%;
+  text-align: center;
+  margin: 10px;
+}
+.scanerNPC {
+  width: 20%;
+  text-align: center;
+  margin: 10px;
+}
+.scanner-types .material-symbols-outlined {
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.scanner-types .material-symbols-outlined:hover {
+  cursor: pointer;
+  background-color: #26c7dc;
+  color: white;
+}
